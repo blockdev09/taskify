@@ -1,0 +1,76 @@
+<div class="landing-page">
+
+  <header class="navbar">
+
+    <div class="brand">
+      TASKIFY
+    </div>
+
+    <nav class="menu">
+      <a>Features</a>
+      <a>Guide</a>
+      <a>Pricing</a>
+      <a>Solutions</a>
+    </nav>
+
+  </header>
+
+  <main class="landing-content">
+
+    <section class="intro">
+
+      <h1 class="heading">
+        Focus on outcomes.
+      </h1>
+
+      <h1 class="heading">
+        Stay aligned.
+      </h1>
+
+      <h1 class="heading">
+        Keep moving.
+      </h1>
+
+      <p class="description">
+        Taskify helps teams organize work,
+        track progress, and move projects forward.
+      </p>
+
+    </section>
+
+    <section class="login-panel">
+
+      <div class="login-card">
+
+        <h2>Welcome Back</h2>
+
+        <p class="sub-text">
+          Enter your email to continue
+        </p>
+
+        <form [formGroup]="emailForm">
+
+          <label>Email</label>
+
+          <input
+            type="email"
+            placeholder="you@example.com"
+            formControlName="email"
+          />
+
+          <button
+            type="button"
+            (click)="getOtp()"
+          >
+            Get OTP
+          </button>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
